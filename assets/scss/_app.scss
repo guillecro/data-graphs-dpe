@@ -1,0 +1,25 @@
+tr.is-info {
+  td, th {
+    background-color: $primary-light;
+    color: $primary;
+  }
+}
+
+
+//==========================
+
+@mixin font-weight($weight) {
+  font-weight: $weight !important;
+}
+
+//==========================
+
+@for $i from 1 through 9 {
+  .is-#{100 * $i} {
+    @include font-weight(100 * $i)
+  }
+}
+
+.b-table{
+  font-size: 0.85rem;
+}
